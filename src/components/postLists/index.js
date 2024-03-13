@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-export default function index({ posts }) {
+export default function postList({ posts }) {
     return (
         <div className='postlist'>
             {posts.map((post) => (

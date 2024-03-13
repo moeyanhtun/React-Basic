@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css';
 
 export default function
-    navbar() {
+    navbar({ setShowModel }) {
     return (
         <nav>
             <div className='menu'>
@@ -10,6 +10,7 @@ export default function
                 <ul>
                     <li>Home</li>
                     <li>Contact</li>
+                    <li onClick={() => setShowModel(true)}>Sign In</li>
                 </ul>
             </div>
         </nav>
