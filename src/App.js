@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavBar from './components/navbar/index'
 import Body from './components/body/index'
 import Model from './components/Model/index'
+
 function App() {
   let [showModel, setShowModel] = useState(false);
   let [posts, setPost] = useState([
