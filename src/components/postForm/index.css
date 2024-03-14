@@ -1,0 +1,34 @@
+.postForm h3 {
+  color: red;
+  margin: 10px 0;
+}
+
+.postForm label {
+  margin-right: 10px;
+}
+.postForm input {
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.postForm div {
+  display: flex;
+  justify-content: center;
+}
+.postForm button {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.red {
+  background-color: lightcoral;
+}
+.blue {
+  background-color: lightblue;
+}

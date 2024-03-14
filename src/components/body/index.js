@@ -4,7 +4,7 @@ import './index.css'
 
 export default function Body({ posts }) {
     return (
-        <div className='container'>
+        <div className='postList'>
             <PostList posts={posts} />
         </div>
     )

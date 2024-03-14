@@ -1,20 +1,19 @@
-nav {
+.navbar {
+  padding: 20px 0;
   background-color: lightblue;
-  padding: 20px;
 }
 
-.menu {
+.navbar .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 80%;
 }
 
-.menu ul {
+.navbar .menu ul {
   display: flex;
   justify-content: space-between;
 }
-.menu li {
+.navbar .menu li {
   margin: 0 30px;
 }
