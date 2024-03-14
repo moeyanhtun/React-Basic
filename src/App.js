@@ -20,13 +20,17 @@ function App() {
       title: 'post 3'
     }
   ])
+  let newPost = (post) => {
+    setPost((prevState) => [...posts, post])
+    setShowModel(false)
+  }
 
   return (
     <>
       <NavBar setShowModel={setShowModel} />
       <Body posts={posts} />
       {showModel && <Model>
-        <PostForm setShowModel={setShowModel} />
+        <PostForm setShowModel={setShowModel} newPost={newPost} />
       </Model>}
     </>
   );

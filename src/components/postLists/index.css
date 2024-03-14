@@ -1,6 +1,7 @@
 .postlist {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -8,6 +9,7 @@
 .postlist h1 {
   width: 200px;
   height: 200px;
+  margin: 15px 0px;
   border: 2px solid gray;
   background-color: lightcoral;
   text-align: center;
