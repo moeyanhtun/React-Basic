@@ -1,31 +1,31 @@
 import React from 'react'
 import './index.css'
 import { useState } from 'react';
+import { useRef } from 'react';
 
 export default function
     PostForm({ setShowModel, newPost }) {
-
+    let title = useRef();
     let restart = () => {
-        setTitle('')
+        title.current.value = '';
     }
     let postSubmit = (e) => {
         let post =
         {
             id: Math.floor(Math.random() * 1000),
-            title: title
+            title: title.current.value
         };
         e.preventDefault();
-        restart();
-        newPost(post)
+        restart()
+        newPost(post);
     }
-    let [title, setTitle] = useState('');
     return (
 
         <div>
             <form className='postForm' onSubmit={postSubmit}>
                 <h3>Create Post</h3>
                 <label>Post Name</label>
-                <input type="text" onChange={(e) => { setTitle(e.target.value) }} value={title} />
+                <input type="text" ref={title} />
                 <div>
                     <button type='submit' className='blue' >Post</button>
                     <button type='button' className='red' onClick={() => setShowModel(false)} >Close</button>
